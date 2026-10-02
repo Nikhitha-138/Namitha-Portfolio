@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Namitha Manoj - Digital Marketing Strategist & SEO Analyst</title>
+  <meta name="description" content="Portfolio of Namitha Manoj - Digital Marketing Strategist and SEO Analyst.">
+
+  <!-- Modern Simple Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-dark: #090d16;
+      --bg-card: rgba(15, 23, 42, 0.75);
+      --bg-card-hover: rgba(30, 41, 59, 0.85);
+      --border-glass: rgba(255, 255, 255, 0.08);
+      --border-glow: rgba(16, 185, 129, 0.35);
+      --primary: #10b981;
+      --primary-light: #34d399;
+      --primary-dark: #059669;
+      --sky: #38bdf8;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* PREVENT OVERALL HORIZONTAL SCROLLING */
+    html, body {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    body {
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(16, 185, 129, 0.12) 0%, transparent 35%),
+        radial-gradient(circle at 85% 65%, rgba(99, 102, 241, 0.1) 0%, transparent 40%);
+      background-attachment: fixed;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      z-index: 100;
+      background: rgba(9, 13, 22, 0.95);
+      border-bottom: 1px solid var(--border-glass);
+      padding: 14px 0;
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand-name {
+      font-weight: 800;
+      font-size: 18px;
+      color: white;
+      text-decoration: none;
+      display: block;
+    }
+
+    .brand-title {
+      font-size: 11px;
+      color: var(--primary-light);
+      font-weight: 600;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary-light);
+    }
+
+    .nav-actions {
+      display: flex;
+      gap: 12px;
+    }
+
+    /* Mobile Hamburger Menu Button */
+    .hamburger-btn {
+      display: none;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid var(--border-glass);
+      color: white;
+      font-size: 20px;
+      padding: 6px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    /* Mobile Navigation Drawer */
+    .mobile-drawer {
+      display: none;
+      flex-direction: column;
+      gap: 12px;
+      background: #0f172a;
+      border-bottom: 1px solid var(--border-glow);
+      padding: 20px;
+      position: fixed;
+      top: 65px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      z-index: 99;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+    }
+
+    .mobile-drawer.active {
+      display: flex;
+    }
+
+    .mobile-drawer a, .mobile-drawer button {
+      color: var(--text-main);
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 700;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      text-align: left;
+      background: transparent;
+      border-left: none; border-right: none; border-top: none;
+      cursor: pointer;
+    }
+
+    .mobile-drawer a:hover, .mobile-drawer button:hover {
+      color: var(--primary-light);
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 20px;
+      border-radius: 24px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      border: none;
+      max-width: 100%;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #042f2e;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-light);
+      transform: translateY(-1px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1px solid var(--primary-light);
+      color: var(--primary-light);
+    }
+
+    .btn-outline:hover {
+      background: rgba(16, 185, 129, 0.1);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding-top: 140px;
+      padding-bottom: 60px;
+      width: 100%;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 40px;
+      align-items: center;
+      width: 100%;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: var(--primary-light);
+      padding: 4px 12px;
+      border-radius: 16px;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      max-width: 100%;
+      word-wrap: break-word;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 16px;
+      color: white;
+      word-wrap: break-word;
+    }
+
+    .hero-bio {
+      color: var(--text-muted);
+      font-size: 15px;
+      margin-bottom: 24px;
+      word-wrap: break-word;
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+
+    /* Contact Pills Strip */
+    .contact-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+      max-width: 100%;
+    }
+
+    .contact-pill {
+      display: inline-flex;
+      align-items: center;
+      background: rgba(15, 23, 42, 0.8);
+      border: 1px solid var(--border-glass);
+      color: var(--text-muted);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      max-width: 100%;
+      word-break: break-all;
+    }
+
+    .contact-pill:hover {
+      border-color: var(--primary-light);
+      color: var(--primary-light);
+      background: rgba(16, 185, 129, 0.08);
+    }
+
+    /* Profile Image Frame */
+    .avatar-wrap {
+      position: relative;
+      width: 100%;
+      max-width: 280px;
+      height: 280px;
+      margin: 0 auto;
+      border-radius: 28px;
+      padding: 5px;
+      background: linear-gradient(135deg, rgba(16, 185, 129, 0.85) 0%, rgba(56, 189, 248, 0.6) 100%);
+      box-shadow: 0 20px 40px rgba(16, 185, 129, 0.25), 0 0 30px rgba(16, 185, 129, 0.15);
+      transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .avatar-wrap:hover {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 25px 50px rgba(16, 185, 129, 0.35), 0 0 45px rgba(16, 185, 129, 0.25);
+    }
+
+    .avatar-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 24px;
+      background: #0f172a;
+      display: block;
+    }
+
+    /* Cards & Containers */
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-glass);
+      border-radius: 16px;
+      padding: 24px;
+      width: 100%;
+      transition: all 0.25s ease;
+    }
+
+    .card-hover:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--border-glow);
+      transform: translateY(-2px);
+    }
+
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 40px;
+      width: 100%;
+    }
+
+    .metric-val {
+      font-size: 30px;
+      font-weight: 800;
+      color: var(--primary-light);
+      margin-bottom: 4px;
+    }
+
+    .metric-lbl {
+      font-size: 13px;
+      font-weight: 700;
+      color: white;
+    }
+
+    /* Sections */
+    .section {
+      padding: 70px 0;
+      width: 100%;
+    }
+
+    .section-bg {
+      background: rgba(6, 10, 18, 0.6);
+      border-top: 1px solid var(--border-glass);
+      border-bottom: 1px solid var(--border-glass);
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 40px auto;
+    }
+
+    .section-header h2 {
+      font-size: 28px;
+      font-weight: 800;
+      color: white;
+      margin-bottom: 8px;
+    }
+
+    .section-header p {
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+
+    /* About Grid */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 24px;
+      width: 100%;
+    }
+
+    .soft-skill-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+    }
+
+    .soft-skill-item {
+      padding: 12px 16px;
+      background: rgba(15, 23, 42, 0.8);
+      border: 1px solid var(--border-glass);
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      color: white;
+    }
+
+    /* Experience Timeline */
+    .exp-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+    }
+
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 1px solid var(--border-glass);
+      padding-bottom: 12px;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .exp-role {
+      font-size: 18px;
+      font-weight: 800;
+      color: white;
+    }
+
+    .exp-company {
+      font-size: 14px;
+      color: var(--sky);
+      font-weight: 600;
+    }
+
+    .exp-date {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--primary-light);
+    }
+
+    .exp-bullets {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-bottom: 14px;
+    }
+
+    .exp-bullets li {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+
+    /* Education Grid */
+    .edu-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      width: 100%;
+    }
+
+    .edu-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-glass);
+      border-radius: 12px;
+      padding: 20px;
+      width: 100%;
+    }
+
+    .edu-degree {
+      font-size: 16px;
+      font-weight: 800;
+      color: white;
+      margin-bottom: 4px;
+    }
+
+    .edu-school {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    .edu-year {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--primary-light);
+    }
+
+    /* Certifications Grid */
+    .certs-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 24px;
+      width: 100%;
+    }
+
+    .cert-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-glass);
+      border-radius: 10px;
+      padding: 16px;
+      width: 100%;
+    }
+
+    .cert-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 4px;
+    }
+
+    .cert-issuer {
+      font-size: 12px;
+      color: var(--primary-light);
+    }
+
+    /* Skills Grid */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      width: 100%;
+    }
+
+    .skill-pill {
+      background: var(--bg-card);
+      border: 1px solid var(--border-glass);
+      border-radius: 10px;
+      padding: 12px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-main);
+      width: 100%;
+    }
+
+    /* Modal Backdrop & Box */
+    .modal-backdrop {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(4, 9, 20, 0.85);
+      z-index: 1000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      cursor: pointer;
+    }
+
+    .modal-backdrop.active { display: flex; }
+
+    .modal-box {
+      background: #0f172a;
+      border: 1px solid var(--border-glow);
+      border-radius: 16px;
+      max-width: 600px;
+      width: 100%;
+      max-height: 85vh;
+      overflow-y: auto;
+      padding: 28px;
+      position: relative;
+      cursor: default;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      color: white;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    /* RESPONSIVE MEDIA QUERIES FOR MOBILE */
+    @media (max-width: 768px) {
+      .hero-grid, .about-grid, .edu-grid { grid-template-columns: 1fr; }
+      .metrics-grid, .certs-grid, .skills-grid { grid-template-columns: repeat(2, 1fr); }
+      .hero h1 { font-size: 32px; }
+      
+      /* Hide Desktop Links and Action Buttons on Mobile */
+      .nav-links, .nav-actions { display: none !important; }
+      
+      /* Show Hamburger Button on Mobile */
+      .hamburger-btn { display: block !important; }
+    }
+
+    @media (max-width: 500px) {
+      .metrics-grid, .certs-grid, .skills-grid { grid-template-columns: 1fr; }
+      .contact-pill { font-size: 12px; padding: 6px 12px; }
+    }
+
+    @media print {
+      .no-print { display: none !important; }
+      body { background: white !important; color: black !important; }
+      .print-modal { display: block !important; position: static !important; max-width: 100% !important; background: white !important; color: black !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar no-print">
+    <div class="container nav-inner">
+      <div>
+        <a href="#" class="brand-name">NAMITHA MANOJ</a>
+        <div class="brand-title">Digital Marketing & SEO</div>
+      </div>
+
+      <!-- Desktop Navigation Links -->
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+      </ul>
+
+      <!-- Desktop Action Buttons -->
+      <div class="nav-actions">
+        <button onclick="downloadResume()" class="btn btn-outline">Download Resume</button>
+        <button onclick="openContactMail()" class="btn btn-primary">Contact Me</button>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="hamburger-btn" onclick="toggleMobileMenu()">☰</button>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobileDrawer" class="mobile-drawer no-print">
+    <a href="#about" onclick="toggleMobileMenu()">About</a>
+    <a href="#experience" onclick="toggleMobileMenu()">Experience</a>
+    <a href="#education" onclick="toggleMobileMenu()">Education</a>
+    <a href="#skills" onclick="toggleMobileMenu()">Skills</a>
+    <button onclick="toggleMobileMenu(); downloadResume();">Download Resume</button>
+    <button onclick="toggleMobileMenu(); openContactMail();">Contact Me</button>
+  </div>
+
+  <!-- Hero Section -->
+  <header class="hero no-print">
+    <div class="container hero-grid">
+      <div>
+        <div class="badge">Digital Marketing Strategist & SEO Analyst</div>
+
+        <h1>I'm Namitha Manoj</h1>
+        <p style="font-size:20px; font-weight:700; color:var(--primary-light); margin-bottom:14px;">Digital Marketing Strategist & SEO Analyst</p>
+
+        <p class="hero-bio">
+          I help businesses drive website traffic, improve search rankings, and scale leads using data-driven digital marketing strategies and technical computer science expertise.
+        </p>
+
+        <div class="hero-ctas">
+          <button onclick="downloadResume()" class="btn btn-primary">Download Resume (PDF)</button>
+          <button onclick="openContactMail()" class="btn btn-outline">Contact Me</button>
+        </div>
+
+        <!-- Contact Pills Strip -->
+        <div class="contact-pills">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=namitha210@gmail.com&su=Portfolio%20Inquiry&body=Hello%20Namitha%2C%0A%0AI%20would%20like%20to%20connect%20with%20you." target="_blank" class="contact-pill">namitha210@gmail.com</a>
+          <a href="tel:8589097708" class="contact-pill">+91 8589097708</a>
+          <a href="https://www.linkedin.com/in/namitha-manoj-18b20221b" target="_blank" class="contact-pill">LinkedIn</a>
+        </div>
+      </div>
+
+      <!-- Profile Image Frame -->
+      <div style="text-align:center;">
+        <div class="avatar-wrap">
+          <img src="Namitha.png" alt="Namitha Manoj" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80';">
+        </div>
+      </div>
+    </div>
+
+    <!-- Metrics Bar -->
+    <div class="container metrics-grid">
+      <div class="card" style="text-align:center;">
+        <div class="metric-val">+280%</div>
+        <div class="metric-lbl">Search Traffic Growth</div>
+      </div>
+      <div class="card" style="text-align:center;">
+        <div class="metric-val">150+</div>
+        <div class="metric-lbl">Page 1 Keywords</div>
+      </div>
+      <div class="card" style="text-align:center;">
+        <div class="metric-val">35+</div>
+        <div class="metric-lbl">Campaigns Managed</div>
+      </div>
+      <div class="card" style="text-align:center;">
+        <div class="metric-val">3.2x</div>
+        <div class="metric-lbl">Lead Growth</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section section-bg no-print">
+    <div class="container">
+      <div class="section-header">
+        <h2>About Me</h2>
+        <p>Combining digital marketing strategy with computer science skills.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="card">
+          <h3 style="font-size:18px; margin-bottom:12px; color:white;">Hi, I'm Namitha Manoj</h3>
+          <p style="color:var(--text-muted); font-size:14px; margin-bottom:16px;">
+            I am a data-driven Digital Marketing Strategist and SEO Analyst with experience in driving website traffic, improving search visibility, and optimizing digital campaigns. I specialize in campaign analysis, SEO strategy, analytics insights, and team collaboration to deliver measurable business outcomes.
+          </p>
+
+          <div style="background:rgba(15,23,42,0.9); padding:14px; border-radius:8px; border:1px solid var(--border-glass);">
+            <strong style="color:var(--sky); font-size:13px; display:block; margin-bottom:4px;">Computer Science Background</strong>
+            <p style="font-size:12px; color:var(--text-muted);">With an MSc and BSc in Computer Science, I bring strong technical problem-solving skills to technical SEO audits, website performance optimization, and analytics tracking.</p>
+          </div>
+        </div>
+
+        <div>
+          <h3 style="font-size:18px; margin-bottom:14px; color:white;">Soft Skills</h3>
+          <div class="soft-skill-list">
+            <div class="soft-skill-item">Strategic Thinking</div>
+            <div class="soft-skill-item">Communication & Collaboration</div>
+            <div class="soft-skill-item">Problem Solving</div>
+            <div class="soft-skill-item">Time Management</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Experience Section -->
+  <section id="experience" class="section no-print">
+    <div class="container">
+      <div class="section-header">
+        <h2>Work Experience</h2>
+        <p>Professional employment history and main responsibilities.</p>
+      </div>
+
+      <div class="exp-list">
+        
+        <!-- Job 1 -->
+        <div class="card">
+          <div class="exp-header">
+            <div>
+              <div class="exp-role">Growth Marketing Analyst</div>
+              <div class="exp-company">Maplitho Growth Marketing Agency</div>
+            </div>
+            <div class="exp-date">Present</div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Plan and execute growth marketing strategies for multiple client brands across digital channels.</li>
+            <li>Manage SEO and content marketing initiatives to improve search visibility and lead generation.</li>
+            <li>Collaborate with designers, content teams, and clients to implement marketing solutions aligned with business goals.</li>
+            <li>Develop data-driven growth frameworks to scale digital marketing performance and customer acquisition.</li>
+          </ul>
+        </div>
+
+        <!-- Job 2 -->
+        <div class="card">
+          <div class="exp-header">
+            <div>
+              <div class="exp-role">Digital Marketing Executive</div>
+              <div class="exp-company">Mykare Health</div>
+            </div>
+            <div class="exp-date">June 2024 – March 2025</div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Developed and implemented digital marketing strategies to increase brand engagement and website traffic across multiple channels.</li>
+            <li>Supported SEO and content marketing initiatives, improving search rankings and organic reach.</li>
+            <li>Collaborated with content and marketing teams to optimize website content and enhance user engagement.</li>
+          </ul>
+        </div>
+
+        <!-- Job 3 -->
+        <div class="card">
+          <div class="exp-header">
+            <div>
+              <div class="exp-role">SEO Executive Intern</div>
+              <div class="exp-company">CMC</div>
+            </div>
+            <div class="exp-date">April 17 – May 31, 2024</div>
+          </div>
+          <ul class="exp-bullets">
+            <li>Assisted in keyword research, on-page SEO optimization, and content improvements to enhance search visibility.</li>
+            <li>Monitored website performance and tracked campaign metrics, providing insights for optimization and strategy improvements.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section section-bg no-print">
+    <div class="container">
+      <div class="section-header">
+        <h2>Education</h2>
+        <p>Academic qualifications and degrees.</p>
+      </div>
+
+      <div class="edu-grid">
+        <div class="edu-card">
+          <div class="edu-degree">MSc Computer Science</div>
+          <div class="edu-school">Assumption College Autonomous, Changanacherry</div>
+          <div class="edu-year">Completed in 2024</div>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-degree">BSc Computer Science</div>
+          <div class="edu-school">Assumption College Autonomous, Changanacherry</div>
+          <div class="edu-year">Completed in 2022</div>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-degree">Higher Secondary School (12th)</div>
+          <div class="edu-school">St Peter's Higher Secondary School, Kurumbandam</div>
+          <div class="edu-year">Completed in 2019</div>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-degree">SSLC (10th)</div>
+          <div class="edu-school">Kristu Jyothi HSS, Chethipuzha</div>
+          <div class="edu-year">Completed in 2017</div>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div style="margin-top:40px;">
+        <h3 style="font-size:18px; font-weight:700; color:white; text-align:center; margin-bottom:16px;">Certifications & Training</h3>
+
+        <div class="certs-grid">
+          <div class="cert-card">
+            <div class="cert-title">HubSpot SEO Certified</div>
+            <div class="cert-issuer">HubSpot Academy</div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-title">Digital Marketing Certification</div>
+            <div class="cert-issuer">Clear My Course (2024)</div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-title">Backlink Management Course</div>
+            <div class="cert-issuer">Greg Gifford</div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-title">Digital Marketing Training</div>
+            <div class="cert-issuer">Sristi Innovative Computer Systems</div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-title">HTML & CSS Web Internship</div>
+            <div class="cert-issuer">STEYP</div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-title">Python & Machine Learning</div>
+            <div class="cert-issuer">ICFOSS</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Technical Skills Section -->
+  <section id="skills" class="section no-print">
+    <div class="container">
+      <div class="section-header">
+        <h2>Technical Skills</h2>
+        <p>Core digital marketing and search engine optimization skills.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-pill">Search Engine Optimization (SEO)</div>
+        <div class="skill-pill">Social Media Marketing (SMM)</div>
+        <div class="skill-pill">Keyword Research</div>
+        <div class="skill-pill">Competitor Analysis</div>
+        <div class="skill-pill">Google Analytics Tracking</div>
+        <div class="skill-pill">Content Marketing Strategy</div>
+        <div class="skill-pill">Campaign Optimization</div>
+        <div class="skill-pill">Client Management</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GLOWING BRANCH DIVIDER LINE (Matching Reference site shareefpalekkodan.vercel.app) -->
+  <div class="no-print" style="display:flex; align-items:center; justify-content:center; max-width:1100px; margin:40px auto; padding:0 20px; position:relative; overflow:hidden;">
+    <div style="height:1px; flex:1; background:linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.4), rgba(56, 189, 248, 0.8));"></div>
+    <div style="width:14px; height:14px; border-radius:50%; border:1px solid rgba(56, 189, 248, 0.5); background:rgba(56, 189, 248, 0.2); margin:0 20px; position:relative; flex-shrink:0;">
+      <div style="position:absolute; inset:3px; border-radius:50%; background:#38bdf8;"></div>
+    </div>
+    <div style="height:1px; flex:1; background:linear-gradient(270deg, transparent, rgba(56, 189, 248, 0.4), rgba(56, 189, 248, 0.8));"></div>
+  </div>
+
+  <!-- Contact & Connect Footer Block (Matching Uploaded Image & shareefpalekkodan.vercel.app) -->
+  <section id="contact-footer" class="section no-print" style="padding-top:20px;">
+    <div class="container" style="max-width:750px;">
+      
+      <div style="display:flex; flex-direction:column; gap:16px;">
+        
+        <!-- Email Block -->
+        <div class="card card-hover" style="padding:20px; display:flex; flex-direction:column; gap:4px;">
+          <div style="font-size:16px; font-weight:800; color:white;">Email</div>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=namitha210@gmail.com&su=Portfolio%20Inquiry&body=Hello%20Namitha%2C%0A%0AI%20would%20like%20to%20connect%20with%20you." target="_blank" style="font-size:14px; color:var(--text-muted); text-decoration:none;">
+            namitha210@gmail.com
+          </a>
+        </div>
+
+        <!-- Phone Block -->
+        <div class="card card-hover" style="padding:20px; display:flex; flex-direction:column; gap:4px;">
+          <div style="font-size:16px; font-weight:800; color:white;">Phone</div>
+          <a href="tel:8589097708" style="font-size:14px; color:var(--text-muted); text-decoration:none;">
+            +91 8589097708
+          </a>
+        </div>
+
+        <!-- Connect on Social Block -->
+        <div style="margin-top:8px;">
+          <div style="font-size:18px; font-weight:800; color:white; margin-bottom:12px;">Connect on Social</div>
+          
+          <a href="https://www.linkedin.com/in/namitha-manoj-18b20221b" target="_blank" class="card card-hover" style="display:block; padding:18px 24px; text-decoration:none; font-size:16px; font-weight:700; color:white;">
+            LinkedIn
+          </a>
+        </div>
+
+        <!-- Location Block -->
+        <div class="card card-hover" style="padding:20px; display:flex; flex-direction:column; gap:4px; margin-top:8px;">
+          <div style="font-size:16px; font-weight:800; color:white;">Location</div>
+          <div style="font-size:14px; color:var(--text-muted);">Based in Changanacherry, Kerala, India</div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Bottom Copyright Footer -->
+  <footer style="padding:30px 0; border-top:1px solid var(--border-glass); text-align:center; font-size:13px; color:var(--text-muted);" class="no-print">
+    <div class="container">
+      <p>© 2026 Namitha Manoj. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Contact Modal -->
+  <div id="contactModal" class="modal-backdrop no-print" onclick="closeModal('contactModal')">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal('contactModal')">X</button>
+      <h3 style="font-size:20px; color:white; margin-bottom:8px;">Contact Information</h3>
+      <p style="font-size:13px; color:var(--text-muted); margin-bottom:16px;">Reach out directly to Namitha Manoj.</p>
+      
+      <div style="background:rgba(15,23,42,0.9); padding:16px; border-radius:10px; border:1px solid var(--border-glass); font-size:13px; margin-bottom:16px; line-height:1.8;">
+        <div>Email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=namitha210@gmail.com&su=Portfolio%20Inquiry&body=Hello%20Namitha%2C%0A%0AI%20would%20like%20to%20connect%20with%20you." target="_blank" style="color:var(--primary-light)">namitha210@gmail.com</a></div>
+        <div>Phone: +91 8589097708</div>
+        <div>Address: Punnassery H Veroor PO, Changanacherry</div>
+        <div>LinkedIn: <a href="https://www.linkedin.com/in/namitha-manoj-18b20221b" target="_blank" style="color:var(--sky)">LinkedIn Profile</a></div>
+      </div>
+
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=namitha210@gmail.com&su=Portfolio%20Inquiry&body=Hello%20Namitha%2C%0A%0AI%20would%20like%20to%20connect%20with%20you." target="_blank" class="btn btn-primary" style="width:100%; justify-content:center;">Send Email Directly</a>
+    </div>
+  </div>
+
+  <!-- Resume Print Modal -->
+  <div id="resumeModal" class="modal-backdrop" onclick="closeModal('resumeModal')">
+    <div class="modal-box print-modal" onclick="event.stopPropagation()">
+      <button class="modal-close no-print" onclick="closeModal('resumeModal')">X</button>
+      
+      <div style="display:flex; justify-content:space-between; align-items:flex-start; border-bottom:2px solid var(--primary); padding-bottom:12px; margin-bottom:16px;">
+        <div>
+          <h2 style="font-size:24px; color:white;">NAMITHA MANOJ</h2>
+          <div style="font-size:13px; color:var(--primary-light); font-weight:700;">Digital Marketing Strategist & SEO Analyst</div>
+        </div>
+        <button onclick="window.print()" class="btn btn-primary no-print">Print / Save PDF</button>
+      </div>
+
+      <div style="font-size:13px; line-height:1.6;">
+        <div style="margin-bottom:14px;">
+          <h4 style="color:var(--primary-light); text-transform:uppercase; font-size:12px; border-bottom:1px solid var(--border-glass); padding-bottom:4px; margin-bottom:6px;">About Me</h4>
+          <p style="color:var(--text-muted);">Data-driven Digital Marketing Strategist and SEO Analyst with experience in driving traffic, improving search visibility, and optimizing digital campaigns. Skilled in campaign analysis, SEO strategy, analytics insights, and team collaboration.</p>
+        </div>
+
+        <div style="margin-bottom:14px;">
+          <h4 style="color:var(--primary-light); text-transform:uppercase; font-size:12px; border-bottom:1px solid var(--border-glass); padding-bottom:4px; margin-bottom:6px;">Professional Experience</h4>
+          <div style="margin-bottom:8px;">
+            <strong style="color:white;">Growth Marketing Analyst</strong> at Maplitho Growth Marketing Agency (Present)
+            <ul style="padding-left:18px; color:var(--text-muted); font-size:12px; margin-top:4px;">
+              <li>Plan and execute growth marketing strategies for multiple client brands across digital channels.</li>
+              <li>Manage SEO and content marketing initiatives to improve search visibility and lead generation.</li>
+            </ul>
+          </div>
+          <div style="margin-bottom:8px;">
+            <strong style="color:white;">Digital Marketing Executive</strong> at Mykare Health (June 2024 – March 2025)
+            <ul style="padding-left:18px; color:var(--text-muted); font-size:12px; margin-top:4px;">
+              <li>Developed and implemented digital marketing strategies to increase brand engagement and website traffic.</li>
+            </ul>
+          </div>
+          <div>
+            <strong style="color:white;">SEO Executive Intern</strong> at CMC (April 17 – May 31, 2024)
+          </div>
+        </div>
+
+        <div>
+          <h4 style="color:var(--primary-light); text-transform:uppercase; font-size:12px; border-bottom:1px solid var(--border-glass); padding-bottom:4px; margin-bottom:6px;">Education</h4>
+          <div>MSc Computer Science - Assumption College Autonomous (2024)</div>
+          <div>BSc Computer Science - Assumption College Autonomous (2022)</div>
+          <div>Higher Secondary School 12th - St Peter's HSS (2019)</div>
+          <div>SSLC 10th - Kristu Jyothi HSS (2017)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JavaScript Logic -->
+  <script>
+    function downloadResume() {
+      const link = document.createElement('a');
+      link.href = 'Namitha_CV.pdf';
+      link.download = 'Namitha_CV.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+
+    function openContactMail() {
+      const email = 'namitha210@gmail.com';
+      const subject = encodeURIComponent('Enquiry');
+      const body = encodeURIComponent('Hello Namitha,\n\nI would like to connect with you.');
+      const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}&su=${subject}&body=${body}`;
+      window.open(gmailUrl, '_blank');
+    }
+
+    function openModal(id) {
+      document.getElementById(id).classList.add('active');
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).classList.remove('active');
+    }
+
+    function toggleMobileMenu() {
+      const drawer = document.getElementById('mobileDrawer');
+      drawer.classList.toggle('active');
+    }
+
+    // Close active modal when pressing Escape key
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        closeModal('contactModal');
+        closeModal('resumeModal');
+      }
+    });
+  </script>
+</body>
+</html>
